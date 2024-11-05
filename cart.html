@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Tech2etc Ecommerce Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/Logo.png" class="Logo"></a>
+        <div>
+            <ul id="navibar"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="information.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="cart.html">Cart</a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <div id="notification" style="display: none;"></div>
+
+    <section id="cart" class="section-p1">
+        <h1>Your Cart</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                
+            </tbody>
+        </table>
+
+        <div class="total-price">
+            <h2>Total Price: R<span id="total-price">0</span></h2>
+        </div>
+
+        <div id="checkout-section">
+            <h3>Checkout</h3>
+            <form action="checkout.php" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter a password" required>
+            </form>
+        </div>
+        <div id="clear-cart">
+            <button id="place-order-button" class="normal">Place Order</button>
+            <button id="clear-cart-button" class="normal">Clear Cart</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

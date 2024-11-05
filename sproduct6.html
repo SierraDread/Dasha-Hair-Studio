@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech2etc Ecommerce Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    
+    <section id="header">
+        <a href="#"><img src="img/Logo.png" class="Logo"></a>
+
+        <div>
+        <ul id="navibar"> 
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="shop.html">Shop</a></li>
+                <li><a href="information.html">Info</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <div id="notification" style="display: none;">Item added to cart!</div>
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="img/MenWash.webp" width="100%" id="MainImg" alt="">
+        </div>
+
+        <div class="single-pro-details">
+            <h6>Davines</h6>
+            <h4>Davines Multi-Purpose Wash</h4>
+            <h2>R150</h2>
+            <button class="normal add-to-cart" data-product="Davines Multi-Purpose Wash" data-price="150">Add To Cart</button>
+            <h4>Product Details</h4>
+            <span>Men's multi-purpose cleansing product formulated to wash hair, beard and body. 
+            It is enriched with Alkekenghi, rich in antioxidants and contributes to promote a 
+            delicate cleansing with a distinctive citrusy scent. Provides hydration leaving the skin soft. 
+            Suitable also to cleanse the beard and moustache prior to shaving.</span>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
